@@ -1,0 +1,79 @@
+html, body {
+	padding: 0;
+  	margin: 0;
+  	width: 100%;
+}
+
+table {
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    border-collapse: collapse;
+    padding: 5px; 
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+}
+
+th:last-child, td:last-child {
+    background-color: #F9F9F7;    
+}
+
+a {
+    color: #0289cc;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 6px;
+}
+
+.green {
+    background-color: #7FD498;    
+}
+
+.lightgreen {
+    background-color: #CCEED6;    
+}
+
+.red {
+    background-color: #FF99B1;    
+}
+
+.left {
+	min-width:140px;
+    text-align: left;
+    border-right: 1px solid #D8D8D8;
+}
+
+.medium_column {
+    width: 50px;
+    text-align: center;    
+}
+
+.small_column {
+    width: 40px;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+	#goals,#missed_goals,.teamgoals,.team_m_goals{
+		display: none;
+	}
+}
+@media screen and (max-width:400px){
+	#won,#draw,#lost{
+		display: none;
+	}
+	.teamWin,.teamDraw,.teamLose{
+		display:none;
+	}
+} 
